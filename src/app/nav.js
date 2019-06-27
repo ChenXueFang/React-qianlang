@@ -2,21 +2,25 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './nav.css'
 const NavBar = ()=>(
-    <div>
-        <div>
-            <img src={} alt=""/>
-            <NavLink exact to='/' className="blue" target="_blank" rel="noopener noreferrer">首页</NavLink>
-            <NavLink to='/all' activeClassName='active' target="_blank" rel="noopener noreferrer">全域旅游</NavLink>
-            <NavLink to='/fast' activeClassName='active' target="_blank" rel="noopener noreferrer">快旅资讯</NavLink>
-            <NavLink exact to='/all' className="blue">旅游扶贫</NavLink>
-            <NavLink to='/all' activeClassName='active'>旅游专题</NavLink>
-            <NavLink to='/fast' activeClassName='active'>黔货出山</NavLink>
-            <NavLink exact to='/all' className="blue">大美黔图</NavLink>
-            <NavLink to='/all' activeClassName='active'>目的地</NavLink>
-            <NavLink to='/fast' activeClassName='active'>自由玩</NavLink>
-        </div>
-        <div>
-
+    <div className='nav_box'>
+        <div className={"nav_con"}>
+            <div className={"nav_left"}>
+                <div><img src={require('./../img/nav_logo.png')} style={{marginTop:"20px"}}/></div>
+                {/*target="_blank" rel="noopener noreferrer"*/}
+                <NavLink className='a' exact to='/'>首页</NavLink>
+                <NavLink className='a' to='/all' activeClassName='active'>全域旅游</NavLink>
+                <NavLink className='a' to='/fast' activeClassName='active'>快旅资讯</NavLink>
+                <NavLink className='a'>旅游扶贫</NavLink>
+                <NavLink className='a'>旅游专题</NavLink>
+                <NavLink className='a'>黔货出山</NavLink>
+                <NavLink className='a'>大美黔图</NavLink>
+                <NavLink className='a'>目的地</NavLink>
+                <NavLink className='a'>自游玩</NavLink>
+            </div>
+            <div className={"nav_right"}>
+                <img src={require('./../img/search_icon.png')} />
+                <NavLink className='a' style={{marginLeft:"20px"}}>请求报道</NavLink>
+            </div>
         </div>
     </div>
 )

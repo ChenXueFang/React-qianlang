@@ -8,6 +8,7 @@ import First from './app/first'
 import All from './app/all'
 import Fast from './app/fast'
 import NavBar from './app/nav'
+import Footer from './app/footer'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route exact path="/" component = {First}/>
         <Route path="/all" component = {All}/>
         <Route path="/fast" component = {Fast}/>
+        <Footer/>
     </Router>
     , document.getElementById('root'));
 
