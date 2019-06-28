@@ -17,6 +17,7 @@ export default class All extends React.Component{
     render(){
         return(
             <div className={"box"}>
+                <span id="hzy_fast_login"></span>
                 {/*con*/}
                 <div className={"con"}>
                     {/*banner轮播*/}
@@ -170,9 +171,11 @@ export default class All extends React.Component{
                 {/*con*/}
                 {/* 侧边固定导航 */}
                 <ul className={"right_din"}>
+                    <li>
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dce6d001aa3ea8736205cd071b6eb0e04c5fd9f7999c18140a6564b68cb60789"><img src={require('./../img/qq.png')} /></a>
+                    </li>
                     <li><img src={require('./../img/webo.png')} /></li>
                     <li><img src={require('./../img/we_chat.png')} /></li>
-                    <li><img src={require('./../img/qq.png')} /></li>
                     <li onClick={this.handleScrollTop}><img src={require('./../img/back_top.png')} /></li>
                 </ul>
                 {/* 侧边固定导航 */}
