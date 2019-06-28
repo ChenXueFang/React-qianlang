@@ -5,7 +5,7 @@ const NavBar = ()=>(
     <div className='nav_box'>
         <div className={"nav_con"}>
             <div className={"nav_left"}>
-                <div><img src={require('./../img/nav_logo.png')} style={{marginTop:"20px"}}/></div>
+                <div><img src={require('./../img/nav_logo.png')}/></div>
                 {/*target="_blank" rel="noopener noreferrer"*/}
                 <NavLink className='a' exact to='/'>首页</NavLink>
                 <NavLink className='a' to='/all' activeClassName='active'>全域旅游</NavLink>

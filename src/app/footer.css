@@ -53,6 +53,7 @@
 }
 .footer_img img{
     height: 23px;
+    cursor: pointer;
 }
 .footer_img div{
     display: flex;
@@ -67,4 +68,19 @@
 .footer_img div:nth-child(2){
     background: #999999;
     margin-left: 20px;
+}
+/* 定位二维码 */
+.phone{
+    position: relative;
+}
+.phone:hover>.din_ma{
+    display: inline-block;
+}
+.phone>.din_ma{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -105px;
+    right: -25px;
+    display: none;
 }

@@ -18,6 +18,7 @@ const bgGround={
     backgroundSize:"100% 100%"   //设置背景图片大小
 }
 export default class First extends React.Component{
+    // 轮播方向
     state = {
         dotPosition: 'right',
     };
@@ -424,7 +425,7 @@ export default class First extends React.Component{
                             {/*文字滚动*/}
                             {/*资讯排行榜*/}
                             <div className={"zi_gun_box"}>
-                                <p>最热资讯</p>
+                                <p>资讯排行榜</p>
                                 <ul className={"refer"}>
                                     <li><span>1</span><a href="#">2019年我在等一个人陪我游贵州，会是你吗？</a></li>
                                     <li><span>2</span><a href="#">你的青春，“99”无悔！南江大峡谷2019高考考生福利来袭</a></li>
@@ -449,7 +450,7 @@ export default class First extends React.Component{
                             </div>
                             {/*热门标签*/}
                             <div className={"zi_gun_box"}>
-                                <p>最热资讯</p>
+                                <p>热门标签</p>
                                 <div className={"btn"}>
                                     <a href="#">百里杜鹃普底景区</a>
                                     <a href="#">苗族祭牛节</a>

@@ -30,7 +30,11 @@ const Footer = ()=>(
                     <a href="#">统一社会信用代码 ：91520115MA6GQRFF6H &nbsp;&nbsp;&nbsp;黔ICP备18001114号</a>
                 </div>
                 <div className={"footer_img"}>
-                    <div><img src={require("./../img/phone_icon.png")} alt=""/></div>
+                    <div className={"phone"}>
+                        <img src={require("./../img/phone_icon.png")} alt=""/>
+                        {/* 定位二维码 */}
+                        <img className={"din_ma"} src={require("./../img/code.png")}/>
+                    </div>
                     <div><img src={require("./../img/webo.png")} alt=""/></div>
                 </div>
             </div>

@@ -71,6 +71,8 @@
 .tab_box{
     background: #fff;
     font-size: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
 }
 .ant-tabs-ink-bar {
     position: absolute;
