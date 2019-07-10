@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './first.css';
 import './all.css';
 import { Pagination } from 'antd';
@@ -37,12 +38,14 @@ export default class All extends React.Component{
                     {/*banner轮播*/}
                     {/*main*/}
                     <div className={"main"}>
+                        <NavLink to='/all/all_1'>
                         {/*左大边*/}
                         <div className={"bigLeft"}>
                             {/*新闻条例*/}
                             <div className={"tab_box"}>
                                 <p className={"new_title"}>全域旅游</p>
                                 <div className={"tab_ul"}>
+                                    <NavLink to='/all/all_1'>
                                     <div className={"tab_li tab1"}>
                                         <img src={require('./../img/tab1.png')} alt=""/>
                                         <div className={"tab_zi"}>
@@ -50,6 +53,8 @@ export default class All extends React.Component{
                                             <p>新蒲的“特”，首先当然非文化莫属。</p>
                                         </div>
                                     </div>
+                                    </NavLink>
+                                    <NavLink to='/all/all_2'>
                                     <div className={"tab_li"}>
                                         <img src={require('./../img/tab3.png')} alt=""/>
                                         <div className={"tab_zi"}>
@@ -57,6 +62,7 @@ export default class All extends React.Component{
                                             <p>新蒲的“特”，首先当然非文化莫属。</p>
                                         </div>
                                     </div>
+                                    </NavLink>
                                     <div className={"tab_li"}>
                                         <img src={require('./../img/tab1.png')} alt=""/>
                                         <div className={"tab_zi"}>
@@ -108,6 +114,7 @@ export default class All extends React.Component{
                             </div>
                             {/*新闻条例*/}
                         </div>
+                        </NavLink>
                         {/*右大边*/}
                         <div className={"bigRight"}>
                             {/*资讯排行榜*/}
@@ -172,6 +179,7 @@ export default class All extends React.Component{
                 {/* 侧边固定导航 */}
                 <ul className={"right_din"}>
                     <li>
+                        {/* qq群聊天 */}
                         <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dce6d001aa3ea8736205cd071b6eb0e04c5fd9f7999c18140a6564b68cb60789"><img src={require('./../img/qq.png')} /></a>
                     </li>
                     <li><img src={require('./../img/webo.png')} /></li>

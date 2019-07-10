@@ -39,6 +39,20 @@ export default class Fast extends React.Component{
                                 <p className={"new_title"}>全域旅游</p>
                                 <div className={"tab_ul"}>
                                     <div className={"tab_li tab1"}>
+                                        <img src={require('./../img/tab3.png')} alt=""/>
+                                        <div className={"tab_zi"}>
+                                            <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
+                                            <p>新蒲的“特”，首先当然非文化莫属。</p>
+                                        </div>
+                                    </div>
+                                    <div className={"tab_li"}>
+                                        <img src={require('./../img/tab5.png')} alt=""/>
+                                        <div className={"tab_zi"}>
+                                            <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
+                                            <p>新蒲的“特”，首先当然非文化莫属。</p>
+                                        </div>
+                                    </div>
+                                    <div className={"tab_li"}>
                                         <img src={require('./../img/tab1.png')} alt=""/>
                                         <div className={"tab_zi"}>
                                             <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
@@ -53,14 +67,7 @@ export default class Fast extends React.Component{
                                         </div>
                                     </div>
                                     <div className={"tab_li"}>
-                                        <img src={require('./../img/tab1.png')} alt=""/>
-                                        <div className={"tab_zi"}>
-                                            <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
-                                            <p>新蒲的“特”，首先当然非文化莫属。</p>
-                                        </div>
-                                    </div>
-                                    <div className={"tab_li"}>
-                                        <img src={require('./../img/tab1.png')} alt=""/>
+                                        <img src={require('./../img/tab5.png')} alt=""/>
                                         <div className={"tab_zi"}>
                                             <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
                                             <p>新蒲的“特”，首先当然非文化莫属。</p>
@@ -68,13 +75,6 @@ export default class Fast extends React.Component{
                                     </div>
                                     <div className={"tab_li"}>
                                         <img src={require('./../img/tab3.png')} alt=""/>
-                                        <div className={"tab_zi"}>
-                                            <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
-                                            <p>新蒲的“特”，首先当然非文化莫属。</p>
-                                        </div>
-                                    </div>
-                                    <div className={"tab_li"}>
-                                        <img src={require('./../img/tab1.png')} alt=""/>
                                         <div className={"tab_zi"}>
                                             <h3>全域旅游看贵州：新蒲之特——沙滩文化</h3>
                                             <p>新蒲的“特”，首先当然非文化莫属。</p>
@@ -164,6 +164,17 @@ export default class Fast extends React.Component{
                     {/*main*/}
                 </div>
                 {/*con*/}
+                {/* 侧边固定导航 */}
+                <ul className={"right_din"}>
+                    <li>
+                        {/* qq群聊天 */}
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dce6d001aa3ea8736205cd071b6eb0e04c5fd9f7999c18140a6564b68cb60789"><img src={require('./../img/qq.png')} /></a>
+                    </li>
+                    <li><img src={require('./../img/webo.png')} /></li>
+                    <li><img src={require('./../img/we_chat.png')} /></li>
+                    <li onClick={this.handleScrollTop}><img src={require('./../img/back_top.png')} /></li>
+                </ul>
+                {/* 侧边固定导航 */}
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './first.css'
+import './all.css'
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css'
 import { DatePicker } from 'antd';
@@ -537,6 +538,17 @@ export default class First extends React.Component{
                     {/*目的地,友情链接*/}
                 </div>
                 {/*con*/}
+                {/* 侧边固定导航 */}
+                <ul className={"right_din"}>
+                    <li>
+                        {/* qq群聊天 */}
+                        <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dce6d001aa3ea8736205cd071b6eb0e04c5fd9f7999c18140a6564b68cb60789"><img src={require('./../img/qq.png')} /></a>
+                    </li>
+                    <li><img src={require('./../img/webo.png')} /></li>
+                    <li><img src={require('./../img/we_chat.png')} /></li>
+                    <li onClick={this.handleScrollTop}><img src={require('./../img/back_top.png')} /></li>
+                </ul>
+                {/* 侧边固定导航 */}
             </div>
         )
     }
